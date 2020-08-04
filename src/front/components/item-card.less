@@ -1,0 +1,28 @@
+@import url('@front/vars');
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  transition: background 0.2s ease-in;
+  border: 1px solid @dark-gray;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+
+  > svg {
+    fill: #fff;
+    width: 60px;
+  }
+
+  > div {
+    margin-top: 20px;
+  }
+
+  &:hover {
+    background: @dark-green;
+  }
+}

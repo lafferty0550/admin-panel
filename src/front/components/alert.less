@@ -1,0 +1,43 @@
+.alert {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  z-index: 2000;
+  overflow: hidden;
+
+  > div {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: #fefefe;
+    border-radius: 2px;
+
+    animation-name: blur;
+    animation-duration: 8100ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+    &.success {
+      background-color: #60c0aa;
+    }
+    &.danger {
+      background-color: #ff4002;
+    }
+    &.info {
+      background-color: #4A90E2;
+    }
+  }
+}
+
+@keyframes blur {
+  0%, 75% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}

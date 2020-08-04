@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "module": "esnext",
+    "allowJs": false,
+    "noImplicitAny": true,
+    "target": "es5",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@core/*": ["front/core/*"],
+      "@core": ["front/core"],
+      "@reducers/*": ["front/reducers/*"],
+      "@reducers": ["front/reducers"],
+      "@components/*": ["front/components/*"],
+      "@components": ["front/components"],
+      "@containers/*": ["front/containers/*"],
+      "@containers": ["front/containers"],
+      "@actions/*": ["front/actions/*"],
+      "@actions": ["front/actions"],
+      "@api/*": ["front/api/*"],
+      "@api": ["front/api"],
+      "@common/*": ["common/*"],
+      "@common": ["common"],
+      "@types/*": ["front/types/*"],
+      "@types": ["front/types"]
+    }
+  }
+}

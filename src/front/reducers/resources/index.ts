@@ -1,0 +1,5 @@
+export {default as resourcesReducer} from '@reducers/resources/resources'
+export {default as currentReducer} from '@reducers/resources/current'
+export {default as editReducer} from '@reducers/resources/edit'
+export {default as deleteReducer} from '@reducers/resources/delete'
+export {default as createReducer} from '@reducers/resources/create'
